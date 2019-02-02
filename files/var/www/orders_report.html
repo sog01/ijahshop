@@ -1,0 +1,48 @@
+{{ define "content" }}
+<div class="row">
+    <div class="col-md-12">
+        <form class="form-inline my-2 my-lg-0" method="GET" action="/inventory/export/report_order/2018-01-01/2018-01-10">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span class="fa fa-download"></span>
+                Download</button>
+        </form>
+        <p>Tanggal Cetak : {{- Field .Summary "DatePrint" }}</p>
+        <p>Tanggal : {{- Field .Summary "Date" }}</p>
+        <p>Total Omzet : {{- Field .Summary "TotalPrice" }}</p>
+        <p>Total Laba Kotor : {{- Field .Summary "TotalProfit" }}</p>
+        <p>Total Penjualan : {{- Field .Summary "TotalSold" }}</p>
+        <p>Total Barang : {{- Field .Summary "TotalItem" }}</p>
+        <br>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">ID Pesanan</th>
+                    <th scope="col">Waktu</th>
+                    <th scope="col">SKU</th>
+                    <th scope="col">Nama Barang</th>
+                    <th scope="col">Jumlah</th>
+                    <th scope="col">Harga Jual</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Harga Beli</th>
+                    <th scope="col">Laba</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{ range $key, $value := .Data }}
+                <tr>
+                    <td>{{- Field $value "OrderIDFormat" }}</td>
+                    <td>{{- Field $value "DateStr" }}</td>
+                    <td>{{- Field $value "Product|Sku" }}</td>
+                    <td>{{- Field $value "Product|Name" }}</td>
+                    <td>{{- Field $value "Quantity" }}</td>
+                    <td>{{- Field $value "Price" }}</td>
+                    <td>{{- Field $value "Total" }}</td>
+                    <td>{{- Field $value "AverageCost" }}</td>
+                    <td>{{- Field $value "Profit" }}</td>
+                </tr>
+                {{ end }}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{{ end }}

@@ -1,0 +1,38 @@
+{{ define "content" }}
+<div class="row">
+    <div class="col-md-12">
+        <form class="form-inline my-2 my-lg-0" method="GET" action="/inventory/export/report_product">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span class="fa fa-download"></span>
+                Download</button>
+        </form>
+        <p>Tanggal Cetak : {{- Field .Summary "DatePrint" }}</p>
+        <p>Jumlah SKU : {{- Field .Summary "TotalSku" }}</p>
+        <p>Jumlah Total Barang : {{- Field .Summary "TotalProduct" }}</p>
+        <p>Total Nilai : {{- Field .Summary "TotalValue" }}</p>
+        <br>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">SKU</th>
+                    <th scope="col">Nama Item</th>
+                    <th scope="col">Jumlah</th>
+                    <th scope="col">Rata - Rata Harga Beli</th>
+                    <th scope="col">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{ range $key, $value := .Data }}
+                <tr>
+                    <td>{{- Field $value "Sku" }}</td>
+                    <td>{{- Field $value "Name" }}</td>
+                    <td>{{- Field $value "Stock" }}</td>
+                    <td>{{- Field $value "AverageCost" }}</td>
+                    <td>{{- Field $value "Total" }}</td>
+                </tr>
+                {{ end }}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{{ end }}

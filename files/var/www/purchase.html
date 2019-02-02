@@ -1,0 +1,43 @@
+{{ define "content" }}
+<div>
+    <div class="row">
+        <div class="col-md-12">
+            <form class="form-inline my-2 my-lg-0" method="GET" action="/inventory/export/purchase">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span class="fa fa-download"></span>
+                    Download</button>
+            </form>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Waktu</th>
+                        <th scope="col">SKU</th>
+                        <th scope="col">Nama Barang</th>
+                        <th scope="col">Jumlah Pesanan</th>
+                        <th scope="col">Jumlah Diterima</th>
+                        <th scope="col">Harga Beli</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Nomer Kwitansi</th>
+                        <th scope="col">Catatan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{ range $key, $value := .Data }}
+                    <tr>
+                        <td>{{- Field $value "DateStr" }}</td>
+                        <td>{{- Field $value "Product|Sku" }}</td>
+                        <td>{{- Field $value "Product|Name" }}</td>
+                        <td>{{- Field $value "QuantityOrder" }}</td>
+                        <td>{{- Field $value "QuantityAccepted" }}</td>
+                        <td>{{- Field $value "Cost" }}</td>
+                        <td>{{- Field $value "Total" }}</td>
+                        <td>{{- Field $value "InvoiceNumber" }}</td>
+                        <td>{{- Field $value "Description" }}</td>
+                    </tr>
+                    {{ end }}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{{ end }}

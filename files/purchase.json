@@ -1,0 +1,104 @@
+{
+    "data": [
+        {
+            "product_id": 29,
+            "quantity_order": 62,
+            "quantity_accepted": 47,
+            "description": "2018/01/06 terima 47; Masih Menunggu",
+            "invoice_number": "20180102-69539",
+            "cost": 74000,
+            "date_raw": "2018-01-02 11:20:00",
+            "is_finish": false
+        },
+        {
+            "product_id": 28,
+            "quantity_order": 63,
+            "quantity_accepted": 35,
+            "description": "2018/01/06 terima 35; Masih menunggu",
+            "invoice_number": "20180102-69458",
+            "cost": 61000,
+            "date_raw": "2018-01-02 07:13:00",
+            "is_finish": false
+        },
+        {
+            "product_id": 27,
+            "quantity_order": 54,
+            "quantity_accepted": 30,
+            "description": "2018/01/06 terima 30; Masih menunggu",
+            "invoice_number": "20180102-69088",
+            "cost": 67000,
+            "date_raw": "2018-01-02 05:46:00",
+            "is_finish": false
+        },
+        {
+            "product_id": 9,
+            "quantity_order": 12,
+            "quantity_accepted": 12,
+            "description": "2017/12/22 terima 12",
+            "invoice_number": "20171218-52879",
+            "cost": 72000,
+            "date_raw": "2017-12-18 02:02:00",
+            "is_finish": true
+        },
+        {
+            "product_id": 5,
+            "quantity_order": 158,
+            "quantity_accepted": 158,
+            "description": "2017/12/18 terima 76; 2017/12/20 terima 82",
+            "invoice_number": "20171215-51963",
+            "cost": 66000,
+            "date_raw": "2017-12-15 06:16:00",
+            "is_finish": true
+        },
+        {
+            "product_id": 6,
+            "quantity_order": 28,
+            "quantity_accepted": 28,
+            "description": "2017/12/18 terima 28",
+            "invoice_number": "20171215-52086",
+            "cost": 63000,
+            "date_raw": "2017-12-15 01:48:00",
+            "is_finish": true
+        },
+        {
+            "product_id": 7,
+            "quantity_order": 108,
+            "quantity_accepted": 108,
+            "description": "2017/12/18 terima 55; 2017/12/20 terima 53",
+            "invoice_number": "20171215-52033",
+            "cost": 76000,
+            "date_raw": "2017-12-15 00:16:00",
+            "is_finish": true
+        },
+        {
+            "product_id": 21,
+            "quantity_order": 45,
+            "quantity_accepted": 45,
+            "description": "2017/12/15 terima 45",
+            "invoice_number": "20171211-80524",
+            "cost": 63000,
+            "date_raw": "2017-12-11 13:26:00",
+            "is_finish": true
+        },
+        {
+            "product_id": 20,
+            "quantity_order": 43,
+            "quantity_accepted": 43,
+            "description": "2017/12/13 terima 43",
+            "invoice_number": "20171209-40417",
+            "cost": 75000,
+            "date_raw": "2017-12-09 06:45:00",
+            "is_finish": true
+        },
+        {
+            "product_id": 29,
+            "quantity_order": 29,
+            "quantity_accepted": 29,
+            "description": "2017/11/29 terima 29",
+            "invoice_number": "20171125-41118",
+            "cost": 62000,
+            "date_raw": "2017-11-25 11:41:00",
+            "is_finish": true
+        }
+    ]
+}

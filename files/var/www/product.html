@@ -1,0 +1,29 @@
+{{ define "content" }}
+<div class="row">
+    <div class="col-md-12">
+        <form class="form-inline my-2 my-lg-0" method="GET" action="/inventory/export/product">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span class="fa fa-download"></span>
+                Download</button>
+        </form>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">SKU</th>
+                    <th scope="col">Nama Item</th>
+                    <th scope="col">Jumlah Sekarang</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{ range $key, $value := .Data }}
+                <tr>
+                    <td>{{- Field $value "Sku" }}</td>
+                    <td>{{- Field $value "Name" }}</td>
+                    <td>{{- Field $value "Stock" }}</td>
+                </tr>
+                {{ end }}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{{ end }}
