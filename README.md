@@ -10,7 +10,7 @@ Simple API for inventory online shop using go language. This repository codebase
 
 To run this application locally, simply type **make run**. Application will serve at **http://localhost:8080**. It will also generate binary files on root directory. 
 
-###Optional
+### Optional
 Vendor files generated using dep package manager, if you want to re-generate this file, simple run **dep ensure -v --vendor-only**.
 
 ## Documentation
