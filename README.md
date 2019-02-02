@@ -13,6 +13,10 @@ To run this application locally, simply type **make run**. Application will serv
 ### Optional
 Vendor files generated using dep package manager, if you want to re-generate this file, simple run **dep ensure -v --vendor-only**.
 
+## Demonstration
+
+This app already run on my VPS. You can access directly at http://ijah.abdullah-dev.tech.
+
 ## Documentation
 API Documentation can be accessed at https://web.postman.co/collections/6239183-5e39b4b8-6fba-4a3f-9df3-cd7d4a8d9cca?workspace=95bf9ad3-7234-4920-8278-30a6ae7432f8#26380cf8-1459-4303-ba00-c92784d6b26b
 
