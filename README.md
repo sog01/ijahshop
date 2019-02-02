@@ -15,10 +15,10 @@ Vendor files generated using dep package manager, if you want to re-generate thi
 
 ## Demonstration
 
-This app already run on my VPS. You can access directly at http://ijah.abdullah-dev.tech.
+This app already run on my VPS. You can access directly at [here](http://ijah.abdullah-dev.tech).
 
 ## Documentation
-API Documentation can be accessed at https://documenter.getpostman.com/view/6239183/RztmsUWb
+API Documentation can be accessed at [here](https://documenter.getpostman.com/view/6239183/RztmsUWb).
 
 ## Data Model
 ![alt text](https://abdullah-dev.tech/images/ijah_model.jpg "Inventory database model")
